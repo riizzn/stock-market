@@ -154,6 +154,45 @@
   .home-section {
     @apply grid w-full gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3;
   }
+  .auth-layout {
+    @apply flex flex-col justify-between lg:flex-row h-screen bg-gray-900 relative overflow-hidden;
+  }
+  .auth-left {
+    @apply w-full lg:w-[45%] lg:h-screen px-6 lg:px-16 flex flex-col overflow-y-auto;
+  }
+  .auth-right {
+    @apply w-full max-lg:border-t max-lg:border-gray-600 lg:w-[55%] lg:h-screen bg-gray-800 px-6 py-4 md:p-6 lg:py-12 lg:px-18 flex flex-col justify-start;
+  }
+  .auth-logo {
+    @apply pt-6 lg:pt-8 mb-8 lg:mb-12;
+  }
+  .auth-blockquote {
+    @apply text-sm md:text-xl lg:text-2xl font-medium text-gray-400 mb-1 md:mb-6 lg:mb-8;
+  }
+  .auth-testimonial-author {
+    @apply text-xs md:text-lg font-bold text-gray-400 not-italic;
+  }
+  .auth-dashboard-preview {
+    @apply max-w-none border-6 border-gray-800 left-0 hidden w-[5xl] h-auto  lg:block rounded-xl shadow-2xl;
+  }
+  .form-title {
+    @apply text-4xl font-bold text-gray-400 mb-10;
+  }
+  .purple-btn {
+    @apply h-12 cursor-pointer bg-linear-to-b from-lilac-primary to-purple-600 hover:from-purple-600 hover:to-lilac-primary text-gray-950 font-medium text-base rounded-lg shadow-lg disabled:opacity-50;
+  }
+  .form-label {
+    @apply text-sm  font-medium text-gray-400;
+  }
+  .form-input {
+    @apply  h-12 px-3 py-3 text-white text-base placeholder:text-gray-500 border-gray-600 bg-gray-800 rounded-lg focus:!border-purple-600 focus:ring-0;
+  }
+  .select-trigger{
+    @apply w-full !h-12 px-3 py-3 text-base border-gray-600 bg-gray-800 text-white rounded-lg focus:!border-purple-600 focus:ring-0;
+  }
+  .footer-link{
+    @apply text-gray-400 font-medium hover:text-lilac-primary hover:underline transition-colors;
+  }
 }
 
 /* Market News Component Styles */
