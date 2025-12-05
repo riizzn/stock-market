@@ -29,14 +29,16 @@ const SelectField = ({
           required: required ? `please select ${label.toLowerCase()}` : false,
         }}
         render={({ field }) => (
-          <Select value="field.value" onValueChange={field.onChange}>
+          <Select value={field.value} onValueChange={field.onChange}>
             <SelectTrigger className="select-trigger ">
-              <SelectValue placeholder={placeholder}/>
+              <SelectValue placeholder={placeholder} />
             </SelectTrigger>
             <SelectContent className="bg-gray-800 border-gray-600 text-white">
-            {options.map((option)=>(
-                <SelectItem value={option.value} key={option.value}>{option.label}</SelectItem>
-            ))}
+              {options.map((option) => (
+                <SelectItem value={option.value} key={option.value}>
+                  {option.label}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
         )}
