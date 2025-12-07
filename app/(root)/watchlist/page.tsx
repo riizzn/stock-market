@@ -11,7 +11,7 @@ const Watchlist = async () => {
   // Empty state
   if (watchlist.length === 0) {
     return (
-      <section className="flex watchlist-empty-container">
+      <section className="flex watchlist-empty-container ">
         <div className="watchlist-empty">
           <Star className="watchlist-star" />
           <h2 className="empty-title">Your watchlist is empty</h2>
