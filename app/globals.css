@@ -185,15 +185,15 @@
     @apply text-sm  font-medium text-gray-400;
   }
   .form-input {
-    @apply  h-12 px-3 py-3 text-white text-base placeholder:text-gray-500 border-gray-600 bg-gray-800 rounded-lg focus:!border-purple-600 focus:ring-0;
+    @apply h-12 px-3 py-3 text-white text-base placeholder:text-gray-500 border-gray-600 bg-gray-800 rounded-lg focus:!border-purple-600 focus:ring-0;
   }
-  .select-trigger{
+  .select-trigger {
     @apply w-full !h-12 px-3 py-3 text-base border-gray-600 bg-gray-800 text-white rounded-lg focus:!border-purple-600 focus:ring-0;
   }
-  .footer-link{
+  .footer-link {
     @apply text-gray-400 font-medium hover:text-lilac-primary hover:underline transition-colors;
   }
-   .search-text {
+  .search-text {
     @apply cursor-pointer hover:text-lilac-primary;
   }
   .search-btn {
@@ -209,7 +209,7 @@
     @apply !bg-gray-800 max-h-[400px];
   }
   .search-list-indicator {
-    @apply px-5 py-2
+    @apply px-5 py-2;
   }
   .search-list-empty {
     @apply py-6 !bg-transparent text-center text-gray-500;
@@ -233,134 +233,147 @@
     @apply font-medium text-base text-gray-400;
   }
   .nav-list {
-  @apply flex flex-col sm:flex-row p-2 gap-3 sm:gap-10 font-medium;
-}
-.stock-details-container {
-  @apply w-full grid-cols-1 gap-6 xl:grid-cols-3 space-y-6 sm:space-y-8;
-}
-.watchlist-btn {
-  @apply bg-[#b08dd7] text-base hover:bg-[#b08dd7] text-[#060606] w-fit px-2 rounded h-11 font-semibold cursor-pointer;
-}
-.watchlist-remove {
-  @apply bg-[#f87171]! hover:bg-[#f87171]! text-[#060606]!
-}
-.watchlist-empty-container {
-  @apply  gap-8 flex-col items-center justify-center md:mt-10 p-6 text-center;
-}
-.watchlist-empty {
-  @apply flex flex-col items-center justify-center text-center content-center;
-}
-.watchlist-star {
-  @apply h-16 w-16 text-[#9a9a9a] mb-4;
-}
-.empty-title {
-  @apply text-xl font-semibold text-[#cdcdcd] mb-2;
-}
-.empty-description {
-  @apply text-[#9a9a9a] mb-6 max-w-md;
-}
-.watchlist-container {
-  @apply flex flex-col-reverse lg:grid lg:grid-cols-3 gap-8;
-}
-.watchlist {
-  @apply lg:col-span-2 space-y-8;
-}
-.watchlist-alerts {
-  @apply items-start gap-6 h-full flex-col w-full lg:col-span-1;
-}
-.watchlist-icon-btn {
-  @apply w-fit cursor-pointer hover:bg-transparent! text-[#cdcdcd] hover:text-[#b08dd7];
-}
-.watchlist-icon-added {
-  @apply !text-[#b08dd7] hover:!text-[#8b6fc2];
-}
-.watchlist-icon {
-  @apply w-8 h-8 rounded-full flex items-center justify-center bg-[#242424]/50;
-}
-.trash-icon {
-  @apply h-4 w-4 text-[#cdcdcd] hover:text-[#f87171];
-}
-.star-icon {
-  @apply h-4 w-4;
-}
-.watchlist-title {
-  @apply text-xl md:text-2xl font-bold text-[#cdcdcd];
-}
-.watchlist-table {
-  @apply !relative overflow-hidden !w-full bg-[#151515] border !border-[#343434] !rounded-lg;
-}
-.table-header-row {
-  @apply text-[#cdcdcd] font-medium bg-[#242424] border-b border-[#343434] hover:bg-[#242424];
-}
-.table-header:first-child {
-  @apply pl-4;
-}
-.table-row {
-  @apply border-b cursor-pointer text-[#cdcdcd] border-[#343434] hover:bg-[#242424]/50 transition-colors;
-}
-.table-cell {
-  @apply font-medium text-base
-}
-.add-alert {
-  @apply flex text-sm items-center whitespace-nowrap gap-1.5 px-3 w-fit py-2 text-[#b08dd7] border border-[#b08dd7]/20 rounded font-medium bg-transparent hover:bg-transparent cursor-pointer transition-colors;
-}
-.watchlist-news {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
-}
-.news-item {
-  @apply bg-[#151515] rounded-lg border w-full border-[#343434] p-4 duration-200 hover:border-[#343434] cursor-pointer;
-}
-.news-tag {
-  @apply inline-block w-fit px-2 py-1 mb-5 rounded bg-[#343434]/60 text-[#34d399] text-sm font-mono font-medium;
-}
-.news-title {
-  @apply text-lg font-semibold text-[#cdcdcd] leading-tight mb-3 line-clamp-2;
-}
-.news-meta {
-  @apply flex items-center text-sm text-[#9a9a9a] mb-1;
-}
-.news-summary {
-  @apply text-[#cdcdcd] flex-1 text-base leading-relaxed mb-3 line-clamp-3;
-}
-.news-cta {
-  @apply text-sm align-bottom text-[#b08dd7] hover:text-[#cdcdcd];
-}
-.alert-dialog {
-  @apply bg-[#151515] border-[#343434] text-[#cdcdcd] max-w-md;
-}
-.alert-title {
-  @apply text-xl font-semibold text-[#cdcdcd];
-}
-.alert-list {
-  @apply overflow-y-auto w-full max-h-[911px] rounded-lg flex border border-[#343434] flex-col gap-4 bg-[#151515] p-3 flex-1;
-}
-.alert-empty {
-  @apply px-6 py-8 text-center text-[#9a9a9a]/50;
-}
-.alert-item {
-  @apply p-4 rounded-lg bg-[#242424] border border-[#343434];
-}
-.alert-name {
-  @apply mb-2 text-lg text-[#b08dd7] font-semibold;
-}
-.alert-details {
-  @apply flex border-b pb-3 items-center justify-between gap-3 mb-2;
-}
-.alert-company {
-  @apply text-[#cdcdcd] text-base;
-}
-.alert-price {
-  @apply text-[#cdcdcd] font-bold;
-}
-.alert-actions {
-  @apply flex items-end justify-between;
-}
-.alert-update-btn {
-  @apply text-[#cdcdcd] rounded-full bg-transparent hover:bg-[#34d399]/15 cursor-pointer;
-}
-.alert-delete-btn {
-  @apply text-[#cdcdcd] rounded-full hover:bg-[#f87171]/15 bg-transparent cursor-pointer transition-colors;
-}
+    @apply flex flex-col sm:flex-row p-2 gap-3 sm:gap-10 font-medium;
+  }
+  .stock-details-container {
+    @apply w-full grid-cols-1 gap-6 xl:grid-cols-3 space-y-6 sm:space-y-8;
+  }
+  .watchlist-btn {
+    @apply bg-[#b08dd7] text-base hover:bg-[#b08dd7] text-[#060606] w-fit px-2 rounded h-11 font-semibold cursor-pointer;
+  }
+  .watchlist-remove {
+    @apply bg-[#f87171]! hover:bg-[#f87171]! text-[#060606]!;
+  }
+  .watchlist-empty-container {
+    @apply gap-8 flex-col items-center justify-center md:mt-10 p-6 text-center;
+  }
+  .watchlist-empty {
+    @apply flex flex-col items-center justify-center text-center content-center;
+  }
+  .watchlist-star {
+    @apply h-16 w-16 text-[#9a9a9a] mb-4;
+  }
+  .empty-title {
+    @apply text-xl font-semibold text-[#cdcdcd] mb-2;
+  }
+  .empty-description {
+    @apply text-[#9a9a9a] mb-6 max-w-md;
+  }
+  .watchlist-container {
+    @apply flex flex-col-reverse lg:grid lg:grid-cols-3 gap-8;
+  }
+  .watchlist {
+    @apply lg:col-span-2 space-y-8;
+  }
+  .watchlist-alerts {
+    @apply items-start gap-6 h-full flex-col w-full lg:col-span-1;
+  }
+  .watchlist-icon-btn {
+    @apply w-fit cursor-pointer hover:bg-transparent! text-gray-400 hover:text-lilac-primary;
+  }
+  .watchlist-icon-added {
+    @apply text-lilac-primary! hover:text-purple-600!;
+  }
+  .watchlist-icon {
+    @apply w-8 h-8 rounded-full flex items-center justify-center bg-gray-700/50;
+  }
+  .trash-icon {
+    @apply h-4 w-4 text-gray-400 hover:text-error-down;
+  }
+  .star-icon {
+    @apply h-4 w-4;
+  }
+  .watchlist-title {
+    @apply text-xl md:text-2xl font-bold text-gray-400;
+  }
+  .watchlist-table {
+    @apply relative! overflow-hidden w-full! bg-gray-800 border border-gray-600! rounded-lg!;
+  }
+  .table-header-row {
+    @apply text-gray-400 font-medium bg-gray-700 border-b border-gray-600 hover:bg-gray-700;
+  }
+  .table-header:first-child {
+    @apply pl-4;
+  }
+  .table-row {
+    @apply border-b cursor-pointer text-gray-400 border-gray-600 hover:bg-gray-700/50 transition-colors;
+  }
+
+  .table-cell {
+    @apply font-medium text-base;
+  }
+
+  .add-alert {
+    @apply flex text-sm items-center whitespace-nowrap gap-1.5 px-3 w-fit py-2 text-lilac-primary border border-lilac-primary/20 rounded font-medium bg-transparent hover:bg-transparent cursor-pointer transition-colors;
+  }
+
+  .watchlist-news {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+  }
+
+  .news-item {
+    @apply bg-gray-800 rounded-lg border w-full border-gray-600 p-4 duration-200 hover:border-gray-600 cursor-pointer;
+  }
+
+  .news-tag {
+    @apply inline-block w-fit px-2 py-1 mb-5 rounded bg-gray-600/60 text-success-up text-sm font-mono font-medium;
+  }
+
+  .news-title {
+    @apply text-lg font-semibold text-gray-400 leading-tight mb-3 line-clamp-2;
+  }
+
+  .news-meta {
+    @apply flex items-center text-sm text-gray-500 mb-1;
+  }
+
+  .news-summary {
+    @apply text-gray-400 flex-1 text-base leading-relaxed mb-3 line-clamp-3;
+  }
+
+  .news-cta {
+    @apply text-sm align-bottom text-lilac-primary hover:text-gray-400;
+  }
+
+  .alert-dialog {
+    @apply bg-gray-800 border-gray-600 text-gray-400 max-w-md;
+  }
+
+  .alert-title {
+    @apply text-xl font-semibold text-gray-400;
+  }
+
+  .alert-list {
+    @apply overflow-y-auto w-full max-h-[911px] rounded-lg flex border border-gray-600 flex-col gap-4 bg-gray-800 p-3 flex-1;
+  }
+
+  .alert-empty {
+    @apply px-6 py-8 text-center text-gray-500/50;
+  }
+  .alert-item {
+    @apply p-4 rounded-lg bg-gray-700 border border-gray-600;
+  }
+  .alert-name {
+    @apply mb-2 text-lg text-lilac-primary font-semibold;
+  }
+  .alert-details {
+    @apply flex border-b pb-3 items-center justify-between gap-3 mb-2;
+  }
+  .alert-company {
+    @apply text-gray-400  text-base;
+  }
+  .alert-price {
+    @apply text-gray-400  font-bold;
+  }
+  .alert-actions {
+    @apply flex items-end justify-between;
+  }
+  .alert-update-btn {
+    @apply text-gray-400  rounded-full bg-transparent hover:bg-success-up/15 cursor-pointer;
+  }
+  .alert-delete-btn {
+    @apply text-gray-400 rounded-full hover:bg-error-down/15 bg-transparent cursor-pointer transition-colors;
+  }
 }
 
 /* Market News Component Styles */
